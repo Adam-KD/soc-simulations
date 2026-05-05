@@ -12,9 +12,11 @@ The lab simulates real-world attack and defense scenarios using three virtual ma
 
 ## Virtual Machines
 
-| Windows 10 (64-bit)          | Victim/Endpoint             | 192.168.1.10
-| Kali Linux - Debian (64-bit) | Attacker                    | 192.168.2.10
-| Ubuntu (64-bit)              | Gateway + Wazuh SIEM Server | 192.168.1.1 / 192.168.2.1
+| Machine | OS | Role | IP Address |
+|---------|-----|------|------------|
+| Windows 10 | Windows 10 (x64) | Victim/Endpoint | 192.168.1.10 |
+| Kali | Debian (x64) | Attacker | 192.168.2.10 |
+| Ubuntu Server | Ubuntu (x64) | Gateway + Wazuh SIEM Server | 192.168.1.1 / 192.168.2.1 |
 
 ---
 
