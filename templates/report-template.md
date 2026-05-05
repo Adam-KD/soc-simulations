@@ -1,9 +1,9 @@
 # Simulation Report — [Title Here]
 
-**Date:**  
+**Date:**  [Date]
 **Attacker Machine:** Kali Linux  
 **Victim Machine:** Windows 10  
-**Objective:** [What are you trying to simulate?]
+**Objective:** [What am I trying to simulate?]
 
 ---
 
