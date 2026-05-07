@@ -1,7 +1,7 @@
 # Simulations
 
 This folder contains all SOC simulation reports conducted in the home lab.
-This is an ongoing project — new simulations are added regularly as complexity and scope increase.
+This is an ongoing project, new simulations are added regularly as complexity and scope increase.
 
 | # | Title | Category | Status |
 |---|-------|----------|--------|
