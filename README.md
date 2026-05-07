@@ -1,21 +1,18 @@
 # SOC Simulations — Home Lab Portfolio
-
 **Author:** Adam Kadmany  
-**Last Updated:** 2026-05-05
+**Last Updated:** 2026-05-07
 
 A personal cybersecurity home lab built to simulate real-world SOC scenarios, practice threat detection, and document findings in a structured and professional manner.
+This is an ongoing project, simulations are added continuously as the lab evolves in complexity and scope.
 
 ---
 
 ## Lab Architecture
-
-```
 Kali Linux (192.168.2.10)
-        ↕
+↕
 Ubuntu Gateway (192.168.2.1 | 192.168.1.1)  ← Centralized traffic monitoring
-        ↕
+↕
 Windows 10 (192.168.1.10)
-```
 
 | Machine | Role | IP |
 |---------|------|----|
@@ -59,23 +56,6 @@ For full lab setup details see [Lab Setup Documentation](setup/lab-setup.md)
 | TCPDump | Network packet capture |
 | Wireshark | Visual network traffic analysis |
 | Kali Linux | Attack simulation |
-
----
-
-## Repository Structure
-
-```
-soc-simulations/
-├── README.md
-├── setup/
-│   └── lab-setup.md
-├── templates/
-│   └── simulation-report-template.md
-└── simulations/
-    └── 01-nmap-recon/
-        ├── report.md
-        └── screenshots/
-```
 
 ---
 
