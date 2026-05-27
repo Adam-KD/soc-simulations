@@ -1,7 +1,7 @@
 # SOC Simulations — Home Lab Portfolio
  
-**Author:** Adam Kadmany                             
-**Last Updated:** 2026-05-19
+**Author:** Adam Kadmany                                        
+**Last Updated:** 2026-05-25
  
 A personal cybersecurity home lab built to simulate real-world SOC scenarios, practice threat detection, and document findings in a structured and professional manner.
  
@@ -38,7 +38,7 @@ For full lab setup details, see [Lab Setup Documentation](setup/lab-setup.md).
 | # | Title | Category | Status |
 |---|-------|----------|--------|
 | 01 | [Network Reconnaissance via Nmap](simulations/01-nmap-recon/report.md) | Reconnaissance | ✅ Complete |
-| 02 | [RDP Brute Force Attack & Detection](simulations/02-rdp-brute-force/report.md) | Credential Access | 🚧 In Progress |
+| 02 | [RDP Brute Force Attack & Detection](simulations/02-rdp-brute-force/report.md) | Credential Access | ✅ Complete |
  
 ---
  
@@ -50,14 +50,21 @@ For full lab setup details, see [Lab Setup Documentation](setup/lab-setup.md).
 - Endpoint telemetry configuration (Sysmon with SwiftOnSecurity config)
 ### Offensive Tradecraft (Simulation)
 - Network reconnaissance using Nmap (TCP Connect, SYN, UDP, Aggressive scans)
+- Brute force credential attacks against RDP and SSH (Hydra, ncrack)
+- Attack adaptation and tooling substitution under operational constraints
 - Attack execution against segmented targets
 ### Analysis & Detection
 - Packet capture and traffic analysis (TCPDump, Wireshark)
-- Protocol-level investigation (TCP, UDP, ICMP, SMB/NBSS, DCERPC)
+- Protocol-level investigation (TCP, UDP, ICMP, SMB/NBSS, DCERPC, RDP/TLS)
+- Authentication event correlation analysis and rule threshold testing
+- Kill chain documentation from initial access through interactive compromise
+- Detection gap identification (speed-dependent correlation, NTLM fallback, SSH source-IP gap)
+- Windows FIM registry analysis as a supplementary detection signal
 - Detection gap analysis across endpoint vs network monitoring layers
-- Comparative testing methodology (controlled variables — e.g., firewall states)
+- Comparative testing methodology (controlled variables across scenarios)
 ### Reporting & Frameworks
 - MITRE ATT&CK technique mapping
+- Multi-scenario comparative simulation design and documentation
 - Vulnerability identification and mitigation recommendations
 - Structured SOC incident report writing
 ---
@@ -71,6 +78,8 @@ For full lab setup details, see [Lab Setup Documentation](setup/lab-setup.md).
 | Sysmon | Windows endpoint monitoring |
 | Nmap | Network scanning and reconnaissance |
 | Hydra | Brute force authentication testing |
+| ncrack | Alternative brute force tool (RDP) |
+| rdesktop | RDP client for post-compromise session and NLA testing |
 | TCPDump | Network packet capture |
 | Wireshark | Visual network traffic analysis |
 | Kali Linux | Attack simulation |
